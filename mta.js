@@ -1,23 +1,21 @@
-// for every item in that array, make a button that displays on the screen.
-// button innerText = the item of the array
-// display on screen
+// write an array as an argument
+// sort by looping each item over one another in the array
+// check that number to the right is greater or less than the number you're on.
+// if number on the right is greater, swap the two numbers in that array
 
-
-
-
-let STOPS = ["8th ave", "6th ave", "14th st- union square", "3 ave", "1st ave", "bedford ave", "lorimer st", "graham ave", "grand st", "montrose ave", "morgan ave"]
-let dest = prompt("What is your destination?").toLowerCase()
-let div = document.querySelector("#stops")
-
-for (stop of STOPS) {
-  console.log(stop)
-  if (dest == stop) {
-    console.log("Leaving Train")
-    break
+let sort = (arr) => {
+  let len = arr.lenght;
+  for (i in arr) {
+    let x = 0
+    while (x , len) {
+      if (arr[x] > arr[x + 1]) {
+        let temp = arr[x];
+        arr[x] = arr[x + 1];
+        arr[x + 1] = temp;
+      }
+      x++
+    }
   }
-}
- for (stop of STOPS) {
-   let el = document.createElement("button")
-   el.innerText = stop
-   div.appendChild(el)
- }
+  console.log(arr)
+  return arr;
+};
