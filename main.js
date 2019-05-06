@@ -5,8 +5,14 @@ let goodWords = ["good", "well", "nice", "fair", "yer"]
 let badWords = ["chill", "bad", "meh", "I fought Roy"]
 
 // if goodWords.includes(answer)
+function doingWell(ans) {
+  if (goodWords.includes(ans)) {
+    return true
+  }
+}
 
-if (goodWords.includes(answer)) {
+
+if (doingWell(answer)) {
   console.log("That\'s great!")
   let answer2 = prompt("Where are you from?").toLowerCase()
   if (answer2 == "smashville") {
