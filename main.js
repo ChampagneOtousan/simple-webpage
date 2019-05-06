@@ -1,13 +1,14 @@
 console.log("Hello World")
 
-let i = 0
+let answer = prompt("How are you doing?").toLowerCase()
 
-while (i < 30) {
-  console.log(i + 1)
-  i += 1
+if (answer == "good") {
+  console.log("That\'s great!")
+} else if (answer == "bad") {
+  console.log("Ol' Roy gotchu huh?")
+} else {
+  console.log("Get good, dawg")
 }
-
-
 
 // Different methods of selection
 
