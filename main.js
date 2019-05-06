@@ -4,6 +4,10 @@ let answer = prompt("How are you doing?").toLowerCase()
 
 if (answer == "good") {
   console.log("That\'s great!")
+  let answer2 = prompt("Where are you from?").toLowerCase()
+  if (answer2 == "smashville") {
+    console.log("YEEEEEURD!")
+  }
 } else if (answer == "bad") {
   console.log("Ol' Roy gotchu huh?")
 } else {
