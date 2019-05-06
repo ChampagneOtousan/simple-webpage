@@ -1,32 +1,23 @@
-let fare = 2.75
-let train = []
+// for every item in that array, make a button that displays on the screen.
+// button innerText = the item of the array
+// display on screen
 
-class MetroCard { // define a class like a function, represents an object
-  constructor(amt) {
-    this.amt = amt
+
+
+
+let STOPS = ["8th ave", "6th ave", "14th st- union square", "3 ave", "1st ave", "bedford ave", "lorimer st", "graham ave", "grand st", "montrose ave", "morgan ave"]
+let dest = prompt("What is your destination?").toLowerCase()
+let div = document.querySelector("#stops")
+
+for (stop of STOPS) {
+  console.log(stop)
+  if (dest == stop) {
+    console.log("Leaving Train")
+    break
   }
 }
-
-function getCard() {
-  let amount = prompt("How much would you like to add?")
-  parseInt(amount)
-
-}
-
-newCard = getCard()
-
-swipe = () => {
-  if (card < fare) {
-    return 'INSUFFICIENT FARE'
-  } else if (card >= fare) {
-    card -= fare
-    train.push(person)
-    return 'GO'
-  }
-}
-
-// create card variable
-// swupe the card
-// check to see if the card has enoughf fare
-// if yes, get on the train
-// if no, refill card
+ for (stop of STOPS) {
+   let el = document.createElement("button")
+   el.innerText = stop
+   div.appendChild(el)
+ }
